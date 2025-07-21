@@ -1,47 +1,67 @@
-🚴‍♂️ Bike Dekho Sales Dashboard — Excel-Based EDA Project
-"Excel might not be fancy, but when used right, it becomes a storyteller."
+# 🚴‍♂️ Bike Dekho Sales Dashboard — Excel-Based EDA Project
 
-Welcome to my end-to-end Excel EDA and Dashboarding project on bike sales, where raw data meets meaningful insights.
+> *"Excel might not be fancy, but when used right, it becomes a storyteller."*
 
-📌 Project Overview
-This project explores sales data from a fictional bike company — Bike Dekho — using Microsoft Excel for:
-Data cleaning
-KPI generation
-Pivot-based analysis
-Visual storytelling via dashboards
+Welcome to my **end-to-end Excel EDA and Dashboarding project** on bike sales, where raw data is transformed into powerful business insights.
 
-🧹 Data Cleaning Highlights
-Categorized Age Groups into ranges (e.g., 18–25, 26–35, etc.)
-Created Income Brackets for better segmentation
-Resolved inconsistencies in Yes/No responses
-Removed nulls and duplicate records
+---
 
-📊 Key KPIs Tracked
-KPI	Description
-Total Sales	Count of all bikes sold
-Units Sold	Total number of 'Yes' responses
-Average Income	Average income of bike purchasers
-Customer Count	Total unique customer entries
+## 📌 Project Overview
 
-📈 Insights Discovered
-🔹 Customers in higher income brackets were significantly more likely to purchase a bike
-🔹 Strong correlation between income level and purchasing behavior
-🔹 Clean dashboards reveal patterns hidden in messy datasets
+This project explores sales data from a fictional bike company — **Bike Dekho** — using Microsoft Excel for:
 
-💻 Tools & Features Used
-Microsoft Excel
-Pivot Tables
-GETPIVOTDATA functions
-Conditional Formatting
-Custom KPI Cards
-Charts and Dashboard Design
+- Data Cleaning  
+- KPI Generation  
+- Pivot-based Analysis  
+- Visual Storytelling via Dashboards  
 
-📷 Dashboard Preview
+---
+
+## 🧹 Data Cleaning Highlights
+
+- Categorized **Age Groups** into ranges (e.g., 18–25, 26–35, etc.)  
+- Created **Income Brackets** for better segmentation  
+- Resolved inconsistencies in Yes/No responses  
+- Removed **nulls** and **duplicate records**  
+
+---
+
+## 📊 Key KPIs Tracked
+
+| KPI                | Description                            |
+|-----------------   |----------------------------------------|
+| **Total Sales**    | Count of all bikes sold                |
+| **Units Sold**     | Total number of 'Yes' responses        |
+| **Avg. Income**    | Average income of bike purchasers      |
+| **Customer Count** | Total unique customer entries          |
+
+---
+
+## 📈 Insights Discovered
+
+- 🔹 Customers in **higher income brackets** were significantly more likely to purchase a bike  
+- 🔹 Strong correlation between **income level and purchasing behavior**  
+- 🔹 Clean dashboards reveal **patterns hidden in messy datasets**
+
+---
+
+## 🛠️ Tools & Features Used
+
+- Microsoft Excel  
+- Pivot Tables  
+- `GETPIVOTDATA` Functions  
+- Conditional Formatting  
+- Custom KPI Cards  
+- Charts & Dashboard Design  
+
+---
+
+## 📷 Dashboard Preview
 
 ![Dashboard](./Bike_Sales_Dashboard.png)
 
+---
 
+## 🔗 Connect with Me
 
-🔗 Connect with Me
-📫 LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/kashish-chaudhary-286aa1290/)
-
+📫 **LinkedIn**: [Kashish Chaudhary](https://www.linkedin.com/in/kashish-chaudhary-286aa1290/) 
