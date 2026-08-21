@@ -1,90 +1,156 @@
-🧠 Mental Health in Tech Survey Analysis
+# 🧠 Mental Health in Tech — Survey Analysis
 
-📌 Project Summary
-This project focuses on understanding mental health in the tech workplace using survey data. We explored how company policies, employee attitudes, and geographical location influence the mental well-being of tech professionals. Through data cleaning, transformation, and analysis, we aimed to derive meaningful insights to support better mental health initiatives at work.
+## 📌 Project Overview
 
-🎯 Business Objective
-The objective of this project is to help organizations understand how various workplace factors influence employee mental health. By analyzing survey data, we aim to uncover patterns related to mental health support, employee openness, and company policies across different countries and company types. The goal is to equip companies with data-driven insights that can be used to reduce stigma, improve mental health support systems, and create safer, more inclusive work environments.
+This project analyzes survey data to understand **mental health and workplace factors in the technology industry**. The analysis focuses on how company policies, employee attitudes, workplace support, and geographic factors are associated with mental health treatment and work interference.
 
-🧪 Solution Approach
-Cleaned and standardized inconsistent and messy survey responses
+The goal is to extract meaningful, data-driven insights that can help organizations improve mental health support and create healthier, more inclusive workplaces.
 
-Converted textual dates into proper timestamp format
+---
 
-Grouped countries and company sizes for simpler, more readable analysis
+## 🎯 Business Objective
 
-Visualized treatment behavior and work interference by geographic location
+The objective is to identify patterns and relationships between **workplace policies, employee attitudes, and mental health treatment**.
 
-Built predictive model (Logistic Regression) to identify key treatment predictors
+The analysis aims to help organizations:
 
-Performed categorical comparison across variables like gender, care options, and anonymity policies
+* Understand factors influencing employees' willingness to seek treatment
+* Evaluate the impact of workplace mental health policies
+* Identify the role of anonymity and access to care
+* Analyze differences across countries and employee groups
+* Develop data-driven strategies to reduce stigma and improve support
 
-Highlighted important trends through clean, readable charts using pandas and matplotlib
+---
 
-🧹 Data Cleaning
-Replaced inconsistent categorical values (e.g., "Not sure" → "Don't know")
+## 🔍 Analysis Approach
 
-Cleaned gender, age, and no_employees columns for uniformity
+The project follows an end-to-end data analysis workflow:
 
-Dropped unused columns: state, comments
+1. **Data Cleaning & Preprocessing**
+2. **Data Transformation**
+3. **Exploratory Data Analysis (EDA)**
+4. **Data Visualization**
+5. **Categorical Analysis**
+6. **Correlation Analysis**
+7. **Predictive Modeling using Logistic Regression**
+8. **Insight Generation**
 
-Created new columns: timestamp, year, month, year_month
+---
 
-Grouped rare countries into "Other" for clearer analysis
+## 🧹 Data Cleaning & Preprocessing
 
-📈 Key Insights & Visualizations
-1. ✅ Treatment by Country
-Shows proportion of individuals receiving treatment across top countries
+* Standardized inconsistent categorical values.
+* Cleaned and normalized `gender`, `age`, and `no_employees` fields.
+* Converted date values into proper timestamp format.
+* Created additional time-based features:
 
-Highest treatment seen in Australia (61.9%) and United States (54.6%)
+  * `year`
+  * `month`
+  * `year_month`
+* Grouped less-represented countries into **"Other"** for clearer visualization.
+* Removed unused columns such as `state` and `comments`.
 
-Lowest in France (15.4%) and Netherlands (33.3%)
+---
 
-2. 📊 Work Interference by Country
-Majority of respondents from the US and UK reported frequent work interference
+## 📊 Key Analysis & Insights
 
-Countries with higher work interference often show higher treatment rates
+### 1. Treatment by Country
 
-3. 🤖 Treatment Prediction Model
-Logistic regression model created using selected features
+Analyzed the proportion of respondents receiving mental health treatment across major countries.
 
-F1-Score ≈ 57%
+* Australia showed the highest treatment rate at approximately **61.9%**.
+* The United States followed at approximately **54.6%**.
+* France showed the lowest rate among the analyzed countries at approximately **15.4%**.
 
-Useful for identifying key workplace factors predicting treatment behavior
+### 2. Work Interference by Country
 
-4. ⚧️ Gender vs Treatment
-Visualized treatment trends across Male, Female, and Non-binary individuals
+Analyzed how frequently mental health affects employees' ability to work.
 
-Female respondents reported slightly higher treatment rates
+* Respondents from countries such as the **US and UK** reported notable levels of work interference.
+* Countries with higher reported work interference also showed relatively higher treatment rates.
 
-5. 🏥 Care Options vs Treatment
-People with access to care options are more likely to seek treatment
+### 3. Treatment Prediction
 
-6. 🔐 Anonymity Policies
-Employees who feel safe about anonymity are more open to treatment
+Built a **Logistic Regression** model to identify factors associated with mental health treatment.
 
-Strong correlation found between anonymity assurance and seeking help
+* Selected relevant workplace and demographic features.
+* Achieved an **F1-score of approximately 57%**.
+* Used the model to identify potentially influential workplace factors.
 
-7. 🔥 Correlation Heatmap
-Encoded key categorical columns to explore their mutual correlations
+### 4. Gender vs. Treatment
 
-Helped reveal which workplace factors are related to each other
+Compared treatment patterns across different gender groups.
 
-📅 Timestamp Analysis
-The dataset spans ~3 years, enabling time-series trend analysis using:
+* Female respondents showed a slightly higher treatment rate in the analyzed dataset.
+* The analysis highlights differences in treatment-seeking behavior across demographic groups.
 
-year, month, and year_month columns
+### 5. Care Options vs. Treatment
 
-Can be extended to analyze mental health awareness growth over time
+Examined the relationship between access to mental health care options and treatment.
 
-🧾 Conclusion
-Mental health in the tech industry is significantly influenced by workplace policies, anonymity, and cultural openness. Our findings indicate that improving mental health resources and encouraging transparent conversations can lead to better mental health outcomes. Countries and companies should focus on care availability, leave flexibility, and reducing stigma through policy and education.
+* Respondents with available care options showed a greater tendency to seek treatment.
 
-💻 Technologies Used
-Python (pandas, matplotlib, seaborn, scikit-learn)
+### 6. Anonymity Policies
 
-Jupyter Notebook
+Analyzed whether employees felt comfortable discussing mental health issues anonymously.
 
-CSV/Excel Data Files
+* Greater confidence in workplace anonymity was associated with increased openness toward seeking treatment.
 
-Data Cleaning & Visualization Libraries
+### 7. Correlation Analysis
+
+Created a correlation heatmap after encoding relevant categorical variables.
+
+* Used the heatmap to identify relationships between workplace policies, employee attitudes, and treatment behavior.
+
+---
+
+## 📅 Time-Based Analysis
+
+The dataset covers approximately **three years** of survey responses.
+
+Time-based features such as `year`, `month`, and `year_month` were created to support future analysis of:
+
+* Changes in treatment patterns
+* Growth in mental health awareness
+* Changes in workplace support over time
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **Pandas** — Data cleaning and analysis
+* **NumPy** — Numerical operations
+* **Matplotlib** — Data visualization
+* **Seaborn** — Statistical visualization
+* **Scikit-learn** — Predictive modeling
+* **Jupyter Notebook**
+* **CSV/Excel** — Dataset handling
+
+---
+
+## 📁 Project Workflow
+
+```text
+Raw Survey Data
+      ↓
+Data Cleaning & Preprocessing
+      ↓
+Feature Engineering
+      ↓
+Exploratory Data Analysis
+      ↓
+Visualization & Correlation Analysis
+      ↓
+Logistic Regression
+      ↓
+Insights & Findings
+```
+
+---
+
+## 🧾 Conclusion
+
+The analysis indicates that **workplace support, access to care, anonymity, and organizational policies** are important factors associated with mental health treatment behavior among technology professionals.
+
+The project demonstrates how **data cleaning, exploratory analysis, visualization, and predictive modeling** can be combined to derive meaningful insights from real-world survey data.
